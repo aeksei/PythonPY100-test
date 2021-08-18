@@ -11,7 +11,7 @@ files:
       offset: 157
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: list_[0]
   - offset: 334
     length: 34
@@ -21,7 +21,7 @@ files:
       offset: 334
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: 'list_:'
   - offset: 645
     length: 29
@@ -31,7 +31,7 @@ files:
       offset: 645
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: 'current_value < min_value:'
   - offset: 740
     length: 34
@@ -41,7 +41,7 @@ files:
       offset: 740
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: min_value = current_value
   text: |
     if __name__ == "__main__":
@@ -108,5 +108,45 @@ files:
     [4, -1, 10, -1, 3, -3, -6, 8, 6, 9]
     Минимальный элемент = -6
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Wed, 18 Aug 2021 17:45:45 UTC
+  expected: |
+    Текущее минимальное значение 4
+    Текущий элемент 4
+    ----------
+    Текущее минимальное значение 4
+    Текущий элемент -1
+    Найден элемент меньший минимума
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент 10
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент -1
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент 3
+    ----------
+    Текущее минимальное значение -1
+    Текущий элемент -3
+    Найден элемент меньший минимума
+    ----------
+    Текущее минимальное значение -3
+    Текущий элемент -6
+    Найден элемент меньший минимума
+    ----------
+    Текущее минимальное значение -6
+    Текущий элемент 8
+    ----------
+    Текущее минимальное значение -6
+    Текущий элемент 6
+    ----------
+    Текущее минимальное значение -6
+    Текущий элемент 9
+    ----------
+    [4, -1, 10, -1, 3, -3, -6, 8, 6, 9]
+    Минимальный элемент = -6
+  actual: <no output>
 record: -1
